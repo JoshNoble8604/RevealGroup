@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Start BP Process" icon-name="custom:custom100">
+        <div class="slds-m-around_medium">
+            <lightning-combobox label="Processes" placeholder="Select Process" options={dropdown1Options} value={dropdown1Value} onchange={handleDropdown1Change}></lightning-combobox>
+            <lightning-combobox label="Resources" placeholder="Select Resource" options={dropdown2Options} value={dropdown2Value} onchange={handleDropdown2Change}></lightning-combobox>
+            <br/>
+            <lightning-button variant="brand" label="Submit" onclick={handleSubmit} class="slds-m-top_medium"></lightning-button>
+        </div>
+        <div class="slds-m-around_medium">
+            <p>{message}</p>
+        </div>
+    </lightning-card>
+</template>
